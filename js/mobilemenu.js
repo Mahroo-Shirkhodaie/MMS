@@ -1,6 +1,8 @@
 let mobilemenu=""
 $("i.fas").on("click", function () {
-    $("div.opensubmenu").fadeIn(100)
+    $("div.opensubmenu").fadeIn(100).css({
+        "display": "width:fixed"
+    })
 
 })
 $("div.close").on("click", function () {
@@ -53,7 +55,4 @@ $("div.backtomenu").on("click", function () {
     $("ul.subbusiness").fadeOut(100)
 
 })
-
-
-
 export default mobilemenu

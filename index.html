@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/setting.css" />
      <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
      <link rel="stylesheet" href="./node_modules/swiper/swiper.min.css">
+     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.js">
   </head>
   <body>
     <div class="wrapper">
@@ -134,42 +135,50 @@
      <!-- end of when open icons--> 
 
       <!-- large main menu -->
-      <nav class="menubar 2xl:w-full 2xl:block xl:w-full xl:block lg:w-full lg:block md:hidden sm:hidden  hidden h-auto pb-3  flex-row" >
+      <div class="menu 2xl:w-full h-[100px] 2xl:flex xl:w-full xl:flex lg:w-full lg:flex md:hidden sm:hidden hidden flex flex-row">
+        <a href="#">
+          <img class="w-[150px] h-[100px] ml-10" src="./images/new-mms-logo.svg" alt="logo" ></a>
+      <nav class="menubar 2xl:w-full 2xl:block xl:w-full xl:block lg:w-full lg:block md:hidden sm:hidden  hidden  pb-3  flex-row" >
         <ul class="w-full h-auto flex flex-row justify-start mt-5">
-          <li class="logo  h-auto flex flex-col justify-center items-start pl-7">
-               <img class="w-[194px] cursor-pointer" src="./images/new-mms-logo.svg" alt="logo" >
-
-    </li>
+     
          
 
-          <li class="shop h-auto flex flex-col flex-nowrap  justify-around" >
-            <div class="submenuchocolate"></div>
+          <!-- <li id="idshop" class="shop h-auto flex flex-col flex-nowrap  justify-around" > 
+            <img class="shop w-[48px] h-[48px] ml-9 justify-center cursor-pointer" src="./images/activeshop.svg">
+            <a  class="no-underline w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] justify-center  text-center hover:underline  " href="#">shop </a>
+           
+       
+          </li>  -->
+        
           <img class="shop w-[48px] h-[48px] ml-9 justify-center cursor-pointer" src="./images/activeshop.svg">
-          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] justify-center  text-center hover:underline ">shop</p>
+          <img class="celebrate w-[48px] h-[48px] ml-9 justify-center cursor-pointer" src="./images/activecelebrate.svg">
+          <img class="explore w-[48px] h-[48px] ml-9 justify-center cursor-pointer" src="./images/activeexplore.svg">
+          <img class="business w-[48px] h-[48px] ml-9 justify-center cursor-pointer" src="./images/activebusiness.svg">
+
+          <!-- <li id="2" class="celebrate cursor-pointer h-auto flex flex-col flex-nowrap justify-around" > 
+            <img class="celebrate w-[48px] h-[48px] ml-9 justify-center" src="./images/activecelebrate.svg" alt="celebrate">
+            <a class="no-underline" href="#">
+         
+          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] text-center hover:underline">celebrate</p></a>
           </li>
 
-     
-
-          <li class="celebrate cursor-pointer h-auto flex flex-col flex-nowrap justify-around" >
-          <img class="celebrate w-[48px] h-[48px] ml-9 justify-center" src="./images/activecelebrate.svg" alt="celebrate">
-          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] text-center">celebrate</p>
-          </li>
-
-          <li class="explore  h-auto flex flex-col flex-nowrap  justify-around" >
+          <li id="3" class="explore  h-auto flex flex-col flex-nowrap  justify-around" ><a  class="no-underline" href="#">
           <img class="explore w-[48px] h-[48px] ml-9 justify-center" src="./images/activeexplore.svg" alt="explore">
-          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] text-center">explore</p>
+          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] text-center hover:underline">explore</p></a>
 
           </li>
-          <li class="business  h-auto flex flex-col flex-nowrap justify-around" >
+
+          <li id="4" class="business  h-auto flex flex-col flex-nowrap justify-around" ><a  class="no-underline" href="#">
           <img class="business w-[48px] h-[48px] ml-9 justify-center" src="./images/activebusiness.svg" alt="">
-          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] text-center ">business</p>
-          </li>
+          <p class="w-[116px] h-[22px] font-[dinbold2] text-[#592411] text-[12px] text-center hover:underline ">business</p></a>
+          </li> -->
 
           
 
 
         </ul>
       </nav>
+    </div>
 
       <!-- open shop -->
       <div class="openshop justify-center flex-row 2xl:w-full xl:w-[full] lg:w-full md:w-full h-[500px] bg-white mt-1 hidden">
@@ -379,12 +388,12 @@
       <div class="smallmenu center 2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex w-flex flex-row justify-start mb-5">
         <div class="submenu md:w-[200px] sm:w-[200px] w-[200px] h-[50px] flex flex-row ">
           <i class="fas fa-bars md:w-[50px] sm:w-[50px] w-[50px] h-[50px] text-[#592411]  text-[45px] mx-auto"></i>
-           <img src="./images/new-mms-logo.svg" alt="logo " class=" md:w-[100px] sm:w-[100px] w-[100px] cursor-pointer">
+           <img src="./images/new-mms-logo.svg" alt="logo " class=" md:w-[100px] sm:w-[100px] w-[100px] cursor-pointer ">
         </div>
        
     </div>
     <!-- open mobile menu--> 
-<div class="opensubmenu 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden w-hidden h-[100%]   flex-col flex-wrap absolute left-0 top-0 z-50 bg-[#FFFFFF] ">
+<div class="opensubmenu 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden w-hidden w-[50%] h-[100%]  flex-col flex-wrap absolute left-0 top-0 z-50 bg-[#FFFFFF] ">
  <div class="logo mb-10 flex flex-row"> 
   <div class="close w-[50px] z-auto h-[50px] mt-[20px] text-justify cursor-pointer absolute left-[25px] text-[40px] text-[#5A1F07]">&times;</div>
   <img class="logo z-50 w-[100px] h-[50px] mt-[20px] mx-auto justify-center" src="./images/new-mms-logo.svg" alt="">
@@ -529,38 +538,37 @@
           </div>
 
           <!--mobile menu list explore boxes -->
-          <div class="px-10  ">
+          <div class="px-10 ">
 
             <!-- row 1 -->
             <div class="flex -mx-2 py-10">
 
                <!--  1-1 -->
-              <div class="w-1/2 px-2 "> 
-                <div class="aboutus w-[300px] flex flex-row justify-center flex-wrap">
-
-                  <div class="flex flex-row flex-wrap">
-                  <div class="mbl w-[150px] h-[160px]  flex flex-col justify-center  flex-nowrap bg-[#FFD201] rounded-lg">
-                    <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full ml-6" src="./images//we.png" alt="mbl"></div>
-                    <div class="2">
-                    
-                      <a class="no-underline" href=""><h4 class="text-[#592411] text-[16px] ml-10 mt-2">about us</h4></a>
-                    </div>  
-                  </div>
-                    
-                  </div>
-           
-              </div>
+               <div class="w-1/2 px-2">
+                <div class="meet 2xl:w-[140px] xl:w-[170px] lg:w-[155px] flex flex-row justify-items-center flex-wrap">
+                  <div class=" w-[190px] flex flex-row  justify-center  flex-wrap">
+      
+                    <div class="mbl w-[140px] h-[160px] flex flex-col justify-center items-center flex-nowrap bg-[#FFD200] rounded-lg">
+                      <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full " src="./images/we.png" alt="mbl"></div>
+                      <div class="2">
+                        <a class="no-underline" href=""><h4 class="text-white text-[16px]  mt-2">about us</h4></a>
+                      </div>  
+                    </div>
+                      
+                    </div>
+             
+                </div>
               </div>
 
               <!-- 1-2 -->
               <div class="w-1/2 px-2">
-                <div class="meet 2xl:w-[140px] xl:w-[170px] lg:w-[155px] flex flex-row justify-items-center flex-wrap">
+                <div class="meet 2xl:w-[200px] xl:w-[170px] lg:w-[155px] flex flex-row justify-items-center flex-wrap">
                   <div class=" w-[190px] flex flex-row justify-center  flex-wrap">
       
-                    <div class="mbl w-[150px] h-[160px] flex flex-col justify-center  flex-nowrap bg-[#D70100] rounded-lg">
-                      <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full ml-6" src="./images/qwe.png" alt="mbl"></div>
+                    <div class="mbl w-[140px] h-[160px] flex flex-col justify-center items-center flex-nowrap bg-[#D70100] rounded-lg">
+                      <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full " src="./images/qwe.png" alt="mbl"></div>
                       <div class="2">
-                        <a class="no-underline" href=""><h4 class="text-white text-[16px] ml-6 mt-2">meet the crew</h4></a>
+                        <a class="no-underline" href=""><h4 class="text-white text-[16px] mt-2">meet the crew</h4></a>
                       </div>  
                     </div>
                       
@@ -576,22 +584,22 @@
             <div class="flex -mx-2 py-10 ">
 
               <!--  2-1 -->
-             <div class="w-1/2 px-2 "> 
-               <div class="aboutus w-[300px] flex flex-row justify-center flex-wrap">
+              <div class="w-1/2 px-2">
+                <div class="meet 2xl:w-[140px] xl:w-[170px] lg:w-[155px] flex flex-row justify-items-center flex-wrap">
+                  <div class=" w-[190px] flex flex-row justify-center  flex-wrap">
+      
+                    <div class="mbl w-[140px] h-[160px] flex flex-col justify-center items-center flex-nowrap bg-[#0e74e2] rounded-lg">
+                      <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full " src="./images//store.png" alt="mbl"></div>
+                      <div class="2">
+                        <a class="no-underline" href=""><h4 class="text-white text-[16px] mt-2">our stores</h4></a>
+                      </div>  
+                    </div>
+                      
+                    </div>
+             
+                </div>
+              </div>
 
-                 <div class="flex flex-row flex-wrap">
-                 <div class="mbl w-[150px] h-[160px]  flex flex-col justify-center  flex-nowrap bg-[#0e74e2] rounded-lg">
-                   <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full ml-6" src="./images/MicrosoftTeams-image (230).png" alt="mbl"></div>
-                   <div class="2">
-                   
-                     <a class="no-underline" href=""><h4 class="text-white text-[18px] ml-10 mt-2">our stores</h4></a>
-                   </div>  
-                 </div>
-                   
-                 </div>
-          
-             </div>
-             </div>
 
              <!-- 2-2 -->
              <div class="w-1/2 px-2">
@@ -616,22 +624,21 @@
            <div class="flex -mx-2 py-10">
 
             <!--  3-1 -->
-           <div class="w-1/2 px-2 "> 
-             <div class="aboutus w-[300px] flex flex-row justify-center flex-wrap">
-
-               <div class="flex flex-row flex-wrap">
-               <div class="mbl w-[150px] h-[160px]  flex flex-col justify-center  flex-nowrap bg-[#FA6400] rounded-lg">
-                 <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full ml-6" src="./images/rec-spot-illustration_cake.png" alt="mbl"></div>
-                 <div class="2">
-                 
-                   <a class="no-underline" href=""><h4 class="text-black text-[18px] ml-10 mt-2">about us</h4></a>
-                 </div>  
-               </div>
-                 
-               </div>
-        
-           </div>
-           </div>
+            <div class="w-1/2 px-2">
+              <div class="meet 2xl:w-[140px] xl:w-[170px] lg:w-[155px] flex flex-row justify-items-center flex-wrap">
+                <div class=" w-[190px] flex flex-row justify-center  flex-wrap">
+    
+                  <div class="mbl w-[140px] h-[160px] flex flex-col justify-center items-center flex-nowrap bg-[#fa6400] rounded-lg">
+                    <div class="1"> <img class="mbl w-[100px] h-[100px] rounded-full justify-center items-center " src="./images/rec-spot-illustration_cake.png" alt="mbl"></div>
+                    <div class="2">
+                      <a class="no-underline" href=""><h4 class="text-black text-[18px]mt-2">recipes</h4></a>
+                    </div>  
+                  </div>
+                    
+                  </div>
+           
+              </div>
+            </div>
 
                    
          
@@ -662,9 +669,9 @@
 
       <div class="swiper mySwiper 2xl:w-full xl:w-full lg:w-full md:w-full sm:full w-full h-[784px]">
       <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./images/P3W1-Birthday-Desktop_final.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./images/P3W1-Graduation-Desktop_final.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./images/P3W1-StPatricksDay-Desktop_final.jpg" alt=""></div>
+      <!-- <div class="swiper-slide"><img src="./images/P3W1-Birthday-Desktop_final.jpg" alt=""></div> -->
+      <!-- <div class="swiper-slide"><img src="./images/P3W1-Graduation-Desktop_final.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/P3W1-StPatricksDay-Desktop_final.jpg" alt=""></div> -->
 
     </div>
     <div class="swiper-button-next"></div>
@@ -1042,8 +1049,9 @@
     //    })
 
   </script> 
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./js/main.js" type="module"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  
  
   </body>
 </html>
